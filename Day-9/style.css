@@ -1,0 +1,16 @@
+.card-img-top {
+  height: 180px;
+  object-fit: cover;
+}
+
+@media (max-width: 576px) {
+  h1#product {
+    font-size: 1.5rem;
+  }
+}
+
+.card-img-top {
+  height: 180px;
+  object-fit: cover;
+}
+

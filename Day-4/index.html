@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid in CSS</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .container {
+        display: grid;
+        gap: 10px;
+        padding: 3rem;
+        text-align: center;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(6,1fr);
+    }
+    .item {
+        border: 2px solid green;
+        background-color: rgb(208, 58, 58);
+        height: 200px;
+        place-content: center;
+
+        width: 100%;
+        color: white;
+    }
+    @media(min-width:768px) {
+        .container{
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            background-color: aqua;
+        }
+        .item {
+            border: 2px solid green;
+            background-color: rgb(208, 58, 58);
+            height: 200px;
+            place-content: center;
+            width: 100%;
+            color: white;
+        }
+        .header,
+        .footer {
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+        .sidebar {
+            grid-row-start: 2;
+            grid-row-end: 4;
+            height: 100%;
+        }
+        .item-5 {
+            grid-column-start: 2;
+            grid-column-end: 4;
+        }
+        .container, .header, .footer, .item, .item-5 {
+            font-size: 20px;
+            text-transform: uppercase;
+        }
+    }
+    @media (max-width:768px) {
+        .item,.item-5{
+            background-color:rgb(54, 182, 141);
+            text-transform: uppercase;
+        }
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="item header">Header</div>
+        <div class="item sidebar">Sidebar</div>
+        <div class="item">Content-1</div>
+        <div class="item">Content-2</div>
+        <div class="item item-5">Content-3</div>
+        <div class="item footer">Footer</div>
+    </div>
+</body>
+
+</html>

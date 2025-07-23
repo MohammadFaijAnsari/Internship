@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Expanding Card</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #f1f1f1;
+      font-family: Arial, sans-serif;
+    }
+   h1{
+    text-align: center;
+   }
+    .container {
+      display: flex;
+      /* flex-wrap: wrap; */
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      padding: 50px;
+    }
+
+    .img-group img {
+      height: 400px;
+      padding: 5px;
+      width: 100px;
+      border-radius: 10%;
+      object-fit: cover;
+      cursor: pointer;
+      transition: width 1s ease, transform 1s ease;
+    }
+
+    .img-group img:hover {
+      width: 250px;
+      border-radius: 10%;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+    <h1>Card Expanding</h1>
+  <div class="container">
+    <div class="img-group">
+      <img src="https://i.pinimg.com/originals/4f/35/b9/4f35b9d128939112fd9c5031a9cddede.jpg" alt="Image Not Found">
+      <img src="https://images.unsplash.com/photo-1552083375-1447ce886485?fm=jpg&q=60&w=3000" alt="Image Not Found">
+      <img src="https://images.unsplash.com/photo-1421789665209-c9b2a435e3dc?fm=jpg&q=60&w=3000" alt="Image Not Found">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU6YdIhaCEGrknhD4UM5ODuKgNBhFih8_M8A&s" alt="Image Not Found">
+      <img src="https://wallpapercrafter.com/desktop2/863075-hd-widescreen-high-quality-desktop-nature-wild-3840x2160.jpg" alt="Image Not Found">
+    </div>
+  </div>
+</body>
+</html>

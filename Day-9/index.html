@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Responsive Grocery Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">GroceryMart Website</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./login.html">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Carousel Start -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="2000">
+                <img src="https://thumbs.dreamstime.com/b/shopping-cart-filled-grocery-products-supermarket-aisle-shopping-cart-supermarket-aisle-filled-packaged-367290807.jpg"
+                    class="d-block w-100" height="400px" alt="Image Not Found" />
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/034/078/501/small_2x/shopping-cart-full-of-product-in-grocery-store-generative-ai-photo.jpg"
+                    class="d-block w-100" height="400px" alt="Image Not Found" />
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="https://thumbs.dreamstime.com/b/supermarket-shelves-filled-packaged-food-grocery-items-wide-selection-packaged-food-products-grocery-items-367296753.jpg"
+                    class="d-block w-100" height="400px" alt="Image Not Found" />
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- Carousel End -->
+
+    <!-- Product Section Start -->
+    <h1 id="product" class="bg-dark text-center text-white py-2">Show Product</h1>
+    <div class="container my-4">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4">
+            <!-- Card 1 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://media.istockphoto.com/id/942313992/photo/big-bottle-of-oil-in-hand-buyer-at-grocery.jpg?s=612x612&w=0&k=20&c=7i3kd7W5KnUmXCvmFPjLNOf80uG0Dx_P3IZjUlf-uVE="
+                        class="card-img-top" alt="Image Not Found" />
+                    <div class="card-body">
+                        <h5 class="card-title">Mustard Oil</h5>
+                        <p>₹ 499</p>
+                    </div>
+                    <div class="d-flex justify-content-between px-2 pb-3">
+                        <a href="#" class="btn btn-outline-dark btn-sm">View Details</a>
+                        <a href="#" class="btn btn-primary btn-sm">
+                            <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://media.istockphoto.com/id/1449032425/photo/shopping-bag-full-of-healthy-food-on-blue.jpg?s=612x612&w=0&k=20&c=856XpqRgq8Bj9Mr28VzAdW-iTyHEj_dW01m6SPPHsOU="
+                        class="card-img-top" alt="Image Not Found" />
+                    <div class="card-body">
+                        <h5 class="card-title">Vegetables</h5>
+                        <p>₹ 99 - ₹ 299</p>
+                    </div>
+                    <div class="d-flex justify-content-between px-2 pb-3">
+                        <a href="#" class="btn btn-outline-dark btn-sm">View Details</a>
+                        <a href="#" class="btn btn-primary btn-sm">
+                            <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://www.shutterstock.com/image-photo/assorted-fresh-groceries-falling-paper-600nw-2259056413.jpg"
+                        class="card-img-top" alt="Image Not Found" />
+                    <div class="card-body">
+                        <h5 class="card-title">Fruits</h5>
+                        <p>₹ 149 - ₹ 349</p>
+                    </div>
+                    <div class="d-flex justify-content-between px-2 pb-3">
+                        <a href="#" class="btn btn-outline-dark btn-sm">View Details</a>
+                        <a href="#" class="btn btn-primary btn-sm">
+                            <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://m.media-amazon.com/images/I/61XzvGx10VL.jpg" class="card-img-top"
+                        alt="Image Not Found" />
+                    <div class="card-body">
+                        <h5 class="card-title">Bathing Soap</h5>
+                        <p>₹ 49 - ₹ 99</p>
+                    </div>
+                    <div class="d-flex justify-content-between px-2 pb-3">
+                        <a href="#" class="btn btn-outline-dark btn-sm">View Details</a>
+                        <a href="#" class="btn btn-primary btn-sm">
+                            <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Product Section End -->
+    <!-- Footer Start -->
+    <footer class="bg-dark text-white pt-4 pb-3 mt-5">
+        <div class="container">
+            <div class="row">
+                <!-- Logo and About -->
+                <div class="col-md-4 mb-3">
+                    <h5>GroceryMart</h5>
+                    <p>Your trusted partner for fresh groceries and daily essentials delivered at your doorstep.</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-md-4 mb-3">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white text-decoration-none">Home</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Shop</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">About Us</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="col-md-4 mb-3">
+                    <h5>Contact Us</h5>
+                    <p><i class="bi bi-telephone-fill"></i> +91 98765 43210</p>
+                    <p><i class="bi bi-envelope-fill"></i> support@grocymart.com</p>
+                    <p><i class="bi bi-geo-alt-fill"></i> 123, Market Street, Delhi, India</p>
+                </div>
+            </div>
+            <hr class="bg-light">
+            <div class="text-center">
+                <p class="mb-0">&copy; 2025 GroceryMart. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
